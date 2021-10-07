@@ -52,6 +52,71 @@ Global Styles
 ===============
 */
 
+@keyframes slide{
+  0%{
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  25%{
+    transform: translateX(500px);
+    opacity: 0.4;
+  }
+  50%{
+    transform: translateX(-200px);
+    opacity: 0.7;
+  }
+  75%{
+    transform: translateX(100px);
+    opacity: 0.8;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+}
+
+@keyframes slideL{
+  0%{
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  25%{
+    transform: translateX(-500px);
+    opacity: 0.4;
+  }
+  50%{
+    transform: translateX(200px);
+    opacity: 0.7;
+  }
+  75%{
+    transform: translateX(-100px);
+    opacity: 0.8;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+}
+
+
+
+
+@keyframes bounce{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+
 *,
 ::after,
 ::before {
@@ -302,10 +367,14 @@ Hero
 }
 .hero h1 {
   font-weight: 700;
+  animation: slide 5s ease-in-out 1;
+  transition: all 1s linear;
 }
 .hero h3 {
   text-transform: none;
   font-size: 1.5rem;
+  animation: slideL 5s ease-in-out 1;
+  transition: all 1s linear;
 }
 .hero-btn {
   color: var(--clr-white);
@@ -318,6 +387,7 @@ Hero
   letter-spacing: var(--spacing);
   border-radius: var(--radius);
   transition: var(--transition);
+  animation: bounce 5s ease-in 1;
 }
 .hero-btn:hover {
   background: var(--clr-white);
