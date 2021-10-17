@@ -261,6 +261,7 @@ Navbar
 .nav-links {
   display: none;
 }
+
 .toggle-nav {
   background: var(--clr-primary-5);
   border-color: transparent;
@@ -356,7 +357,8 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/main-bcg.jpeg) center/cover;
+    url(./images/pexels-karolina-grabowska-5632381.jpg) center/cover;
+    /* background-repeat: no-repeat; */
   display: grid;
   place-items: center;
   color: var(--clr-white);
@@ -690,6 +692,17 @@ product
 About Page
 ===============
 */
+.all{
+ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main-bcg.jpeg) center/cover;
+}
+.our{
+  color: white;
+}
+.about-text{
+  color: rgb(204, 203, 203);
+}
+
 .about-text {
   line-height: 2;
   max-width: 45em;
